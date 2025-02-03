@@ -15,7 +15,7 @@ class UserTest extends TestCase
         $this->assertEquals('+51999999999', $user->getPhoneNumber());
     }
 
-    public function testCanSetName(): void
+    public function testCanSetName()
     {
         $user = new User('Ivan Alvarado', 'ivan.alvarado@mail.com', 'abc123def', '+51999999999');
         $user->setNombres('Ivan Alvarado');
@@ -23,7 +23,7 @@ class UserTest extends TestCase
         $this->assertEquals('Ivan Alvarado', $user->getNombres());
     }
 
-    public function testEmailValidation(): void
+    public function testEmailValidation()
     {
         $user = new User('Ivan Alvarado', 'ivan.alvarado', 'abc123def', '+51999999999');
         $this->assertFalse(filter_var($user->getEmail(), FILTER_VALIDATE_EMAIL));

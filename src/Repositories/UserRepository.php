@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Respositories;
+namespace App\Repositories;
 
 use App\Entities\User;
 use App\Exceptions\UserDoesNotExistException;
